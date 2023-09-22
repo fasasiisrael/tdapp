@@ -4,7 +4,10 @@ workflows:
     environment:
       flutter: stable
     scripts:
-    
+      - name: Fix Info.plist
+        script:
+          - plutil -lint ios/Runner/Info.plist || plutil -convert xml1 ios/Runner/Info.plist
+
       - name: Prepare CocoaPods
         script:
           - sudo gem install cocoapods
@@ -24,5 +27,4 @@ workflows:
         script:
           - flutter build ios --debug --no-codesign
 
-      # Add additional steps for deployment, if needed
 
