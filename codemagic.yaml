@@ -20,12 +20,6 @@ workflows:
           flutter upgrade
           flutter pub get
 
-      - name: Build iOS
-        script: |
-          flutter build ios --debug --no-codesign
-
-      # Add additional steps for deployment, if needed
-
       - name: Fix Xcode Build Error
         script: |
           # Check if the file exists
@@ -49,3 +43,11 @@ workflows:
             echo "File found. No action needed."
           fi
 
+
+      - name: Build iOS
+        script: |
+          flutter build ios --debug --no-codesign
+
+      # Add additional steps for deployment, if needed
+
+      
