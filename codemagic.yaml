@@ -5,26 +5,27 @@ workflows:
       flutter: stable
     scripts:
       - name: Fix Info.plist
-        script:
-          - plutil -lint ios/Runner/Info.plist || plutil -convert xml1 ios/Runner/Info.plist
+        script: |
+          plutil -lint ios/Runner/Info.plist || plutil -convert xml1 ios/Runner/Info.plist
 
       - name: Prepare CocoaPods
-        script:
-          - sudo gem install cocoapods
-          - cd ios
-          - pod repo update
-          - rm Podfile.lock
-          - rm -rf Pods
-          - pod install
-          - cd ..
+        script: |
+          sudo gem install cocoapods
+          cd ios
+          pod repo update
+          rm Podfile.lock
+          rm -rf Pods
+          pod install
+          cd ..
 
       - name: Update Flutter and Plugins
-        script:
-          - flutter upgrade
-          - flutter pub get
+        script: |
+          flutter upgrade
+          flutter pub get
 
       - name: Build iOS
-        script:
-          - flutter build ios --debug --no-codesign
+        script: |
+          flutter build ios --debug --no-codesign
 
+      # Add additional steps for deployment, if needed
 
