@@ -42,7 +42,7 @@ workflows:
           else
             echo "File found. No action needed."
           fi
-- name: Pre-Build
+    - name: Pre-Build
       script:
         - |
           # Copy the OneSignalNotificationServiceExtension.appex directory to the expected location
