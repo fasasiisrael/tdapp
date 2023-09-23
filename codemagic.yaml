@@ -20,25 +20,7 @@ workflows:
           flutter upgrade
           flutter pub get
 
-      - name: Copy OneSignalNotificationServiceExtension
-        script: |
-          #!/bin/bash
-
-          # Copy the OneSignalNotificationServiceExtension.appex directory to the expected location
-          SOURCE_PATH="path/to/OneSignalNotificationServiceExtension.appex"
-          DESTINATION_PATH="ios/Runner/OneSignalNotificationServiceExtension.appex"
-
-
-          # Check if the source directory exists
-          if [ -d "$SOURCE_PATH" ]; then
-            # Create the destination folder if it doesn't exist
-            mkdir -p "$(dirname "$DESTINATION_PATH")"
-            # Copy the source directory to the destination
-            cp -R "$SOURCE_PATH" "$DESTINATION_PATH"
-          else
-            echo "Error: Source directory not found at $SOURCE_PATH"
-            exit 1
-          fi
+      
 
       - name: Fix Xcode Build Error
         script: |
