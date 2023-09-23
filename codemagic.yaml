@@ -22,29 +22,7 @@ workflows:
 
       
 
-      - name: Fix Xcode Build Error
-        script: |
-          # Check if the file exists
-          if [ ! -e '/Users/builder/clone/build/ios/Debug-iphoneos/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension' ]; then
-            echo "File not found. Generating or copying the missing file..."
-            
-            # Replace the following line with the actual command to generate or copy the file
-            # For example, if you need to generate the file, you can use a build command.
-            # If you need to copy the file from a specific location, use the 'cp' command.
-            
-            # Example (replace with your actual command):
-            # Generate the file (replace with your actual command):
-            # ./generate_missing_file.sh
-            
-            # OR
-            
-            # Copy the file (replace with your actual command):
-            cp '/Users/builder/clone/build/ios/Debug-iphoneos/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension'
-            
-          else
-            echo "File found. No action needed."
-          fi
-    
+      
 
       - name: Build iOS
         script: |
