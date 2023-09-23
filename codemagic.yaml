@@ -25,8 +25,9 @@ workflows:
           #!/bin/bash
 
           # Copy the OneSignalNotificationServiceExtension.appex directory to the expected location
-          SOURCE_PATH="/Users/builder/clone/build/ios/Debug-iphoneos/OneSignalNotificationServiceExtension.appex"
-          DESTINATION_PATH="/Runner/OneSignalNotificationServiceExtension.appex"
+          SOURCE_PATH="path/to/OneSignalNotificationServiceExtension.appex"
+          DESTINATION_PATH="ios/Runner/OneSignalNotificationServiceExtension.appex"
+
 
           # Check if the source directory exists
           if [ -d "$SOURCE_PATH" ]; then
