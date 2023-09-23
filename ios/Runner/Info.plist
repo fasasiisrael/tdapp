@@ -39,8 +39,7 @@
 	<string>ca-app-pub-3940256099942544~3347511713</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSCameraUsageDescription</key>
-	<string>TDPel Media App wants to access Camera</string>
+	
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>TDPel Media App want to access Photo Library</string>
 	<key>NSPhotoLibraryUsageDescription</key>
