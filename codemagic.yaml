@@ -20,6 +20,26 @@ workflows:
           flutter upgrade
           flutter pub get
 
+      - name: Pre-Build
+      script:
+        - |
+          # Copy the OneSignalNotificationServiceExtension.appex directory to the expected location
+          # Replace 'SOURCE_PATH' and 'DESTINATION_PATH' with the actual paths
+          
+          SOURCE_PATH="/Users/builder/clone/build/ios/Debug-iphoneos/OneSignalNotificationServiceExtension.appex"
+          DESTINATION_PATH="/Runner/OneSignalNotificationServiceExtension.appex"
+
+          # Check if the source directory exists
+          if [ -d "$SOURCE_PATH" ]; then
+            # Create the destination folder if it doesn't exist
+            mkdir -p "$(dirname "$DESTINATION_PATH")"
+            # Copy the source directory to the destination
+            cp -R "$SOURCE_PATH" "$DESTINATION_PATH"
+          else
+            echo "Error: Source directory not found at $SOURCE_PATH"
+            exit 1
+          fi
+
       - name: Fix Xcode Build Error
         script: |
           # Check if the file exists
@@ -42,25 +62,7 @@ workflows:
           else
             echo "File found. No action needed."
           fi
-    - name: Pre-Build
-      script:
-        - |
-          # Copy the OneSignalNotificationServiceExtension.appex directory to the expected location
-          # Replace 'SOURCE_PATH' and 'DESTINATION_PATH' with the actual paths
-          
-          SOURCE_PATH="/Users/builder/clone/build/ios/Debug-iphoneos/OneSignalNotificationServiceExtension.appex"
-          DESTINATION_PATH="/Runner/OneSignalNotificationServiceExtension.appex"
-
-          # Check if the source directory exists
-          if [ -d "$SOURCE_PATH" ]; then
-            # Create the destination folder if it doesn't exist
-            mkdir -p "$(dirname "$DESTINATION_PATH")"
-            # Copy the source directory to the destination
-            cp -R "$SOURCE_PATH" "$DESTINATION_PATH"
-          else
-            echo "Error: Source directory not found at $SOURCE_PATH"
-            exit 1
-          fi
+    
 
       - name: Build iOS
         script: |
