@@ -1,7 +1,7 @@
 name: news_flutter
 description: A new Flutter application
 
-version: 6.0.0
+version: 6.1.0
 
 environment:
   sdk: '>=3.0.0 <4.0.0' 
@@ -10,7 +10,7 @@ dependencies:
 
   #BASE
   cupertino_icons: ^1.0.5
-  nb_utils: ^5.0.8
+  nb_utils: ^6.0.0
   google_fonts: ^5.1.0
   flutter_vector_icons: ^2.0.0
   intl: ^0.18.1
@@ -30,7 +30,6 @@ dependencies:
   #FIREBASE
   firebase_core: ^2.14.0
   firebase_auth: ^4.6.3
-  firebase_analytics: ^10.4.3
 
   #CONNECTIVITY
   share_plus: ^6.3.4
@@ -61,8 +60,7 @@ dependencies:
   flutter_html: ^3.0.0-beta.2
   flutter_tts: ^3.7.0
   speech_to_text: ^6.1.1
-  flutter_inappwebview: ^5.7.2+3
-  file_picker: ^5.2.8
+  
 
   # Color generator
   palette_generator: ^0.3.3+2
@@ -71,7 +69,7 @@ dependencies:
   geolocator: ^9.0.2
 
   # Webview
-  webview_flutter: ^3.0.0
+  webview_flutter: ^2.8.0
   url_launcher: ^6.1.11
   flutter_widget_from_html: ^0.8.5
   syncfusion_flutter_pdfviewer: ^21.2.5
