@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>TDPel Media</string>
+	<string>News and Blog</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -39,13 +39,12 @@
 	<string>ca-app-pub-3940256099942544~3347511713</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	
+	<key>NSCameraUsageDescription</key>
+	<string>News and Blog app want to access Camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>TDPel Media App want to access Photo Library</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-    <string>Allow access to the photo library to pick images and videos.</string>
+	<string>News and Blog app want to access Photo Library</string>
 	 <key>NSSpeechRecognitionUsageDescription</key>
-	 <string>TDPel Media App requires access to Speech recognition  when you will be used to determine which words you speak into this device microphone.</string>
+	 <string>News app requires access to Speech recognition  when you will be used to determine which words you speak into this device microphone.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -82,15 +81,4 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 </dict>
-<key>CFBundleURLTypes</key>
-<array>
-    <dict>
-        <key>CFBundleTypeRole</key>
-        <string>Editor</string>
-        <key>CFBundleURLSchemes</key>
-        <array>
-            < Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID>
-            <string>"com.googleusercontent.apps.417042433146-6je2shn6sujj595ded0dcmluriiiqcjk"</string>
-        </array>
-    </dict>
-</array></plist>
+</plist>
