@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>417042433146-6je2shn6sujj595ded0dcmluriiiqcjk.apps.googleusercontent.com</string>
+	<string>419760688278-lte21tkvivsjt6u7r2ft877kk8fsi9a1.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.417042433146-6je2shn6sujj595ded0dcmluriiiqcjk</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>417042433146-58s3q3jahckon5uvd1h6ibsnv0vumlo3.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.419760688278-lte21tkvivsjt6u7r2ft877kk8fsi9a1</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDaZQfmE0G4vIHWIwDzRuG2lxHNItwgczk</string>
+	<string>AIzaSyDfzUtS2KlbQfj_v0rKojWbbdiN3KWq5oM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>417042433146</string>
+	<string>419760688278</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.kartalinc.tdpel</string>
+	<string>com.iqonic.newzflutter1</string>
 	<key>PROJECT_ID</key>
-	<string>tdpelapp</string>
+	<string>news-and-blog-63e56</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tdpelapp.appspot.com</string>
+	<string>news-and-blog-63e56.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:417042433146:ios:974aedf79c28ab3862e7c3</string>
+	<string>1:419760688278:ios:704622a2d6c047b30bc6b7</string>
+	<key>DATABASE_URL</key>
+	<string>https://news-and-blog-63e56.firebaseio.com</string>
 </dict>
 </plist>
